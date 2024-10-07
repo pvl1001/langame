@@ -1,0 +1,68 @@
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input {
+    @include input-style;
+  }
+}
+
+.icon {
+  width: 6rem;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+
+  svg {
+    width: 2.4rem;
+  }
+}
+
+.with_icon {
+  input {
+    padding-left: 6rem;
+  }
+}
+
+.icon_error {
+  position: absolute;
+  right: .6rem;
+
+  &_with_icon {
+    right: 4.6rem;
+  }
+}
+
+.input_error {
+  input {
+    outline: .2rem solid #E56D6D !important;
+  }
+}
+
+.blur {
+  .icon {
+    opacity: .2;
+  }
+}
+
+._big {
+  input {
+    outline-color: #EAEDFE !important;
+  }
+
+  .blur {
+    input:placeholder-shown {
+      background-color: #3258AC;
+      outline: none !important;
+    }
+  }
+
+  .icon_error {
+    right: 1.4rem;
+  }
+}

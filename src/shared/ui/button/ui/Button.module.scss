@@ -1,0 +1,35 @@
+._ {
+  --bg: rgb(220, 0, 0);
+  --color: #fff;
+  --shadow: 0 .4rem 1.2rem 0 rgba(220, 0, 0, 0.19);
+  color: var(--color);
+  box-shadow: var(--shadow);
+  background: var(--bg);
+  height: 4.2rem;
+  border-radius: 6.4rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  @include hover {
+    filter: opacity(.7);
+  }
+}
+
+._[disabled] {
+  box-shadow: 0 .4rem .7rem 0 rgba(220, 0, 0, 0.17);
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.white {
+  --bg: #fff;
+  --color: #000;
+  --shadow: none;
+  border: .1rem solid rgba(0, 0, 0, 0.29);
+}
+

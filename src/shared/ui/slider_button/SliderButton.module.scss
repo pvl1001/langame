@@ -1,0 +1,33 @@
+._ {
+  --bg-color: #fff;
+}
+
+._:global {
+  &.swiper-button-disabled {
+    --bg-color: #D6D6D6;
+    pointer-events: none;
+  }
+}
+
+._ {
+  width: 3.1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 .3rem 1.5rem 0 rgba(0, 0, 0, 0.14);
+  background: rgb(255, 255, 255);
+
+  svg {
+    height: 40%;
+  }
+
+  @include hover {
+    background-color: #FBCE51;
+  }
+}
+
+.prev {
+  rotate: 180deg;
+}
+

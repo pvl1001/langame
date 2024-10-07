@@ -1,0 +1,29 @@
+._ {
+  display: grid;
+  width: 100%;
+
+  fieldset {
+    display: grid;
+    gap: 2rem;
+  }
+}
+
+.forgot {
+  text-align: center;
+  margin-block: 2.9rem 4.9rem;
+
+  a {
+    color: rgb(1, 1, 1);
+    font-size: 1.2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 3rem;
+}
+
+.button {
+  height: 4.4rem;
+  font-size: 1.4rem;
+}

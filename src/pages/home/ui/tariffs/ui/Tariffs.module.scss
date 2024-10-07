@@ -1,0 +1,36 @@
+._ {
+  margin-left: 3rem;
+  box-shadow: 0 .4rem 1.4rem 0 rgba(0, 0, 0, 0.04);
+  background: linear-gradient(136.91deg, rgb(61, 61, 61) -12.973%, rgb(67, 67, 67) 51.087%, rgb(96, 96, 96) 108.805%);
+  color: #fff;
+  padding-block: 3.5rem;
+  grid-row: span 3;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 3.65rem
+}
+
+.list {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.item {
+  padding-block: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.key {
+  font-size: 1.3rem;
+  font-weight: 400;
+  opacity: .8;
+}
+
+.value {
+  font-size: 1.7rem;
+  font-weight: 700;
+}

@@ -1,0 +1,23 @@
+._ {
+  display: flex;
+  flex: 1;
+}
+
+.main {
+  padding: 5rem 6.6rem  4.3rem 4.4rem;
+  border-radius: 4.4rem;
+  background: rgb(234, 234, 234);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  width: 24.5rem;
+  margin-left: auto;
+
+  &__container {
+    margin-top: 5.4rem;
+    display: flex;
+  }
+}

@@ -1,0 +1,51 @@
+._ {
+  @include white-container;
+  background-color: #fff;
+  position: relative;
+}
+
+.refresh_button {
+  padding: 1rem;
+  position: absolute;
+  right: 1.4rem;
+  top: 1.8rem;
+  display: grid;
+
+  svg {
+    width: 2.4rem;
+  }
+}
+
+.score_container {
+  padding-block: 2.1rem 3.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.main_score {
+  font-size: 3.3rem;
+  font-weight: 900;
+}
+
+.bonus_score {
+  border-radius: 1.1rem;
+  background: rgba(0, 0, 0, 0.09);
+  min-width: 10.2rem;
+  padding: 0.7rem 1.9rem 1rem 1.9rem;
+
+  &__score {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 2.4rem;
+  }
+
+  &__text {
+    font-size: .9rem;
+  }
+}
+
+.button {
+  width: 100%;
+}
+

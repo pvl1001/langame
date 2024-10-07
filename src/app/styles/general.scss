@@ -1,0 +1,86 @@
+@import './mixins.scss';
+
+html {
+  height: auto;
+  font-size: 10px;
+
+  @include media($media-l) {
+    font-size: calc(100vw / 1920 * 10);
+  }
+
+
+  &, * {
+    // firefox
+    scrollbar-color: #E9DED4 transparent;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar,
+    &::-webkit-scrollbar-thumb {
+      border-radius: 0.2rem;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0.4rem; /* ширина для вертикального скролла */
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #E9DED4;
+    }
+  }
+}
+
+html, body, #root {
+  min-height: 100vh;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body, p {
+  font-family: var(--font-lato);
+  font-style: normal;
+  line-height: 1;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.wrapper {
+  max-width: 192rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+button {
+  transition: .25s ease-out color, .25s background-color, .25s filter, .25s opacity;
+}
+
+.text-red {
+  color: #F54932;
+}
+
+.red-line {
+  text-decoration: line-through #F54932;
+}
+
+a {
+  color: rgb(48, 87, 162);
+}
+
+.link {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+
+  @include media {
+    font-size: 1.8rem;
+  }
+}

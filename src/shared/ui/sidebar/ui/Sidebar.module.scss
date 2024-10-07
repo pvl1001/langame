@@ -1,0 +1,57 @@
+._ {
+  width: 24.7rem;
+}
+
+.logo {
+  width: 10.2rem;
+}
+
+.item {
+  min-height: 13.15rem;
+  border-bottom: .1rem solid #DBDBDB;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  transition: .2s ease-out filter;
+
+  @include hover {
+    &:not(:first-child) {
+      filter: opacity(.5);
+    }
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.3rem;
+    color: inherit;
+  }
+}
+
+.transaction_icon,
+.settings_icon,
+.support_icon {
+  width: 2.4rem;
+}
+
+.book_icon {
+  width: 3.6rem;
+}
+
+.item.support {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: .5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #DC0000;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(2.1rem, -3.8rem);
+  }
+}

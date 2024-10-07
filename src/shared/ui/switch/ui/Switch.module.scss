@@ -1,0 +1,41 @@
+._ {
+  $w: 6.1rem;
+  $h: 3.4rem;
+  text-align: center;
+  display: flex;
+
+  input {
+    display: none;
+  }
+
+  label {
+    position: relative;
+    width: $w;
+    height: $h;
+    align-items: center;
+    display: flex;
+    background: #E7E7E7;
+    border-radius: 3rem;
+    cursor: pointer;
+    padding: .5rem;
+  }
+
+  label:after {
+    content: "";
+    height: 100%;
+    aspect-ratio: 1;
+    background: #fff url('shared/assets/svg/check.svg') center / 0 no-repeat;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    transform: translateX(0);
+  }
+
+  input:checked + label:after {
+    left: auto;
+    right: .2rem;
+    background: #DC0000 url('shared/assets/svg/check.svg') center / 1.2rem no-repeat;
+    transform: translateX(calc($w - $h));
+  }
+}
+
+

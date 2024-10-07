@@ -1,0 +1,23 @@
+._ {
+  border-radius: 2rem;
+  padding: 3.2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.row__key, .title {
+  font-weight: 300;
+}
+
+.row__value {
+  font-weight: 700;
+  text-align: right;
+  text-transform: uppercase;
+}

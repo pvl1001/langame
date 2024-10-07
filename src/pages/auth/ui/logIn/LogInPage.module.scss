@@ -1,0 +1,42 @@
+._ {
+  display: grid;
+  place-items: center;
+  width: 33.9rem;
+}
+
+.logo {
+  width: 12.4rem;
+  margin-bottom: 6rem;
+}
+
+.registration_link {
+  color: #DC0000;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 3rem;
+
+  &__container {
+    text-align: center;
+    padding-block: 6.7rem 7.3rem;
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.text_install {
+  font-size: 1.4rem;
+}
+
+.stores {
+  display: flex;
+  justify-content: center;
+  gap: 2.1rem;
+  margin-top: 2.4rem;
+
+  svg {
+    width: 13.5rem;
+  }
+}
+

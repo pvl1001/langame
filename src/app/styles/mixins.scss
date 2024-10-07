@@ -1,0 +1,61 @@
+$media-l: 1920px;
+
+@mixin hover {
+  @media(hover: hover) and (pointer: fine) {
+    &:hover {
+      @content
+    }
+  }
+}
+
+@mixin media($px: $media-l) {
+  @media(max-width: $px) {
+    @content
+  }
+}
+
+@mixin input-style {
+  --bg-focus: transparent;
+  padding: 0 4rem 0 1.8rem;
+  height: 8.2rem;
+  border-radius: 0.8rem;
+  width: 100%;
+  position: relative;
+  color: rgb(1, 1, 1);
+  font-size: 1.7rem;
+  font-weight: 900;
+
+  &::placeholder {
+    color: #BFC2E9;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  &:placeholder-shown {
+    background-color: #EFEFEF;
+  }
+
+  &:not(:placeholder-shown),
+  &:focus {
+    outline: .2rem solid #A4A5D3;
+    background-color: var(--bg-focus);
+  }
+
+  // при автозаполнении
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-text-fill-color: var(--text-color) !important;
+    -webkit-background-clip: text;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 .2rem .2rem var(--bg-focus);
+  }
+}
+
+@mixin white-container {
+  background-color: #fff;
+  box-shadow: 0 .4rem 1.4rem 0 rgba(0, 0, 0, 0.04);
+  font-size: 1.5rem;
+}
+

@@ -1,0 +1,45 @@
+._ {
+  width: 63.8rem;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5.5rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 5.5rem;
+
+  > * {
+    width: 15.6rem;
+    height: 3.7rem;
+  }
+}
+
+.btn_home button,
+.btn_home {
+  width: 100%;
+}
+
+.btn_home {
+  margin-top: 4.7rem;
+
+  svg {
+    width: 1.9rem;
+  }
+}
+
+.btn_info {
+  position: relative;
+
+  svg {
+    position: absolute;
+    right: 1rem;
+    width: 1.4rem;
+  }
+}

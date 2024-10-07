@@ -1,0 +1,28 @@
+._ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.9rem;
+  place-items: center;
+  border-radius: 2.2rem;
+  min-height: 14.8rem;
+  transition: .2s ease-out filter;
+
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  @include hover {
+    filter: opacity(.7);
+  }
+
+  a {
+    display: grid;
+  }
+
+  svg {
+    width: 4.2rem;
+  }
+}

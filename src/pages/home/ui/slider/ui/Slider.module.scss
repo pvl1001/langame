@@ -1,0 +1,25 @@
+._ {
+  padding: 0;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 33.2rem;
+
+  }
+}
+
+.slide {
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.navigation {
+  display: flex;
+  position: absolute;
+  right: 2rem;
+  top: 3.2rem;
+  gap: 1.3rem;
+  z-index: 1;
+}

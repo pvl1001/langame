@@ -1,0 +1,21 @@
+._ {
+  display: grid;
+  gap: 1.9rem;
+  place-items: center;
+  padding-bottom: 1.7rem;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  gap: 2rem;
+
+  a {
+    color: inherit;
+  }
+}
+
+.copyright {
+  width: 25.6rem;
+}

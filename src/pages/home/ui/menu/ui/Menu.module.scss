@@ -1,0 +1,30 @@
+._ {
+  grid-column: span 3;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+
+  li {
+    flex: 1;
+  }
+}
+
+.device {
+  background-color: rgb(247, 251, 255);
+}
+
+.select {
+  background-color: rgb(248, 240, 255);
+}
+
+.problem {
+  background-color: rgb(255, 254, 238);
+}
+
+.session {
+  background-color: rgb(240, 255, 249);
+}
+
+.logout {
+  background-color: rgb(255, 237, 237);
+}
