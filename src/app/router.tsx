@@ -1,12 +1,12 @@
 import {AuthLayout, Layout} from "app/layouts";
 import {LogInPage, RegistrationPage} from "pages/auth";
 import {HomePage} from "pages/home/ui/HomePage.tsx";
-import {createBrowserRouter} from "react-router-dom";
+import {createHashRouter} from "react-router-dom";
 import {Paths} from "shared/lib/Paths";
 import {ErrorBoundary} from "shared/ui/error_boundary";
 
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         errorElement: <ErrorBoundary/>,
         children: [
