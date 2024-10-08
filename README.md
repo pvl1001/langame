@@ -9,7 +9,9 @@ https://pvl1001.github.io/langame/
 ```
 Стек:
 - React
+- React-router
 - Scss modules
+- Formik
 - Swiper
 - FSD
 - Vite
