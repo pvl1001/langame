@@ -15,7 +15,7 @@ export function RegistrationPage({}: Props) {
 
             <div className={s.tabs}>
                 <Button className={s.btn_info}>Полная <InfoIcon/></Button>
-                <Button>Упрощенная</Button>
+                <Button theme={'grey'}>Упрощенная</Button>
             </div>
 
             <RegistrationForm/>

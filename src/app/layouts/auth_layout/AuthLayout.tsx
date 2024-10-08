@@ -13,7 +13,9 @@ export function AuthLayout({}: Props) {
 
             <div className={s.grid}>
                 <div/>
-                <Outlet/>
+                <div className={s.page_wrapper}>
+                    <Outlet/>
+                </div>
                 <Footer/>
             </div>
 

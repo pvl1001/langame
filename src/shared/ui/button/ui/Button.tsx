@@ -4,7 +4,7 @@ import s from "./Button.module.scss";
 
 
 export type ButtonProps = ComponentProps<'button'> & {
-    theme?: 'white'
+    theme?: 'white' | 'grey'
     isPending?: boolean
     currency?: string
 }

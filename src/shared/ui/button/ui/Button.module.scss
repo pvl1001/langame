@@ -2,6 +2,22 @@
   --bg: rgb(220, 0, 0);
   --color: #fff;
   --shadow: 0 .4rem 1.2rem 0 rgba(220, 0, 0, 0.19);
+}
+
+.white {
+  --bg: #fff;
+  --color: #000;
+  --shadow: none;
+  border: .1rem solid rgba(0, 0, 0, 0.29);
+}
+
+.grey {
+  --bg: #EFEFEF;
+  --color: #787878;
+  --shadow: none;
+}
+
+._ {
   color: var(--color);
   box-shadow: var(--shadow);
   background: var(--bg);
@@ -25,11 +41,3 @@
   opacity: 0.12;
   pointer-events: none;
 }
-
-.white {
-  --bg: #fff;
-  --color: #000;
-  --shadow: none;
-  border: .1rem solid rgba(0, 0, 0, 0.29);
-}
-

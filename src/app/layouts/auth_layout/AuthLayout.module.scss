@@ -3,6 +3,7 @@
   background: url('../img/bg_el.webp') calc(100% - -17.5rem) -23.6rem/ 39rem no-repeat,
   url('../img/bg_el.webp') -17.8rem calc(100% - -27.5rem) / 39rem no-repeat;
   min-height: inherit;
+  position: relative;
 }
 
 .count {
@@ -55,4 +56,8 @@
   font-weight: 700;
   text-align: center;
   letter-spacing: .15rem;
+}
+
+.page_wrapper {
+  padding-block: 5rem;
 }
